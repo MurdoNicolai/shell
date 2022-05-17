@@ -1,1 +1,1 @@
-step 0 creating first script
+exo 0
