@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -e grep list list~ ls_cwd_content m t test.txt test.txt~ -e README.md /etc/ssh/sshd_config
+grep -E ^[a-zA-Z] /etc/ssh/ssh_config
