@@ -1,2 +1,2 @@
 #!/bin/bash
-find -depth -name ceacea.gif op.gif R.gif xaebize.gif -type f -printf '%f\n' | sort -d -f | tr -d [.gif]
+find -depth -name "*.gif" -type f -printf '%f\n' | sort -d -f | tr -d [.gif]
