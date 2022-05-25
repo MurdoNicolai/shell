@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $1 | tr A-MN-Za-mn-z A-MN-Zn-za-m
