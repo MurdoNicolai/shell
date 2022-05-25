@@ -1,0 +1,2 @@
+#!/bin/bash
+grep "" -n $1 | grep -E -e "^*0:-" -e "^*2:-" -e "^*4:-" -e "^*6:-" -e "^*8:-" | cut -d ":" --complement -f1
