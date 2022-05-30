@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#displays 1 to 20 with bad luck frome countries at 4 9 and 17
+c=1
+while [ $c -le 20 ]
+do
+    echo $c
+    if [ $c = 4 ]
+    then
+	echo "bad luck from China"
+    elif [ $c = 9 ]
+    then
+	echo "bad luck from Japan"
+    elif [ $c = 17 ]
+    then
+	echo "bad luck from Italy"
+    fi
+    ((c++))
+done
+      
