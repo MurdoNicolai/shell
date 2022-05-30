@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#Shows all the minuts in 12 h
+hours=0
+while [ $hours -le 12 ]
+do
+    echo "Hour: "$hours
+    ((hours++))
+    minutes=1
+    while [ $minutes -le 59 ]
+    do
+	echo $minutes
+	((minutes++))
+    done
+done
