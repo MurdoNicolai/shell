@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Prints 10 Best Schools
+c=1
+while [ "$c" -le "10" ]
+do
+  echo "Best School"
+  c=$((c+1))
+done
