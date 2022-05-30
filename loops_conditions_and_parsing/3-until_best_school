@@ -2,7 +2,7 @@
 #prints 10 best schools with until
 c=1
 
-until [ $c -ge 10 ]
+until [ $c -gt 10 ]
 do
   echo "Best School"
   ((c++))
