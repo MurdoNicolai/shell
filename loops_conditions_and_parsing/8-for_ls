@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Prints content of current directory in list after - 
+ for f in *; do echo "${f}" | cut -d"-" -f2,3,4,5; done;
