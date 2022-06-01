@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #kills highlander script 
- pkill -f -SIGSTOP "/7-highlander"
+ pkill -f -KILL "/7-highlander"
