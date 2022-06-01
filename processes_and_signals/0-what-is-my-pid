@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 #Shows it's on PID
 ps | awk '{ if($NF == "0-what-is-my-pi") print $1}'
 
