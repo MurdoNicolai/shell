@@ -17,7 +17,7 @@ case $arg in
 	kill "$(cat /var/run/my_process.pid)"
 	rm /var/run/my_process.pid
 	./manage_my_process &
-	pgrep -f "manage_my_process" >> /var/run/my_process.pid
+	pgrep -f "/manage_my_process" >> /var/run/my_process.pid
 	echo "manage_my_process restarted"
 	;;
     *)
