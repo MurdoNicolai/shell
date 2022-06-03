@@ -5,7 +5,7 @@ arg=$1
 case $arg in
     start)
 	./manage_my_process &
-	sudo pgrep -f "./manage_my_process" > /var/run/my_process.pid
+	pgrep -f "./manage_my_process" > /var/run/my_process.pid
 	echo "manage_my_process started"
 	;;
     stop)
@@ -17,7 +17,7 @@ case $arg in
 	sudo pkill -f "./manage_my_process"
 	sudo rm -f /var/run/my_process.pid
 	./manage_my_process &
-	sudo pgrep -f "./manage_my_process" > /var/run/my_process.pid
+	pgrep -f "./manage_my_process" > /var/run/my_process.pid
 	echo "manage_my_process restarted"
 	;;
     *)
