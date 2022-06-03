@@ -1,26 +1,25 @@
 #!/usr/bin/env bash
 #manages manage_my_process
 arg=$1
-
 case $arg in
     start)
 	./manage_my_process &
-	pgrep -f "./manage_my_process" > /var/run/my_process.pid
+	pgrep -f "/manage_my_process" > /var/run/my_process.pid
 	echo "manage_my_process started"
 	;;
     stop)
-	sudo pkill -f "./manage_my_process"
-	sudo rm -f /var/run/my_process.pid
+	pkill -f "/manage_my_process"
+	rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
 	;;
     restart)
-	sudo pkill -f "./manage_my_process"
-	sudo rm -f /var/run/my_process.pid
+	pkill -f "/manage_my_process"
+	rm /var/run/my_process.pid
 	./manage_my_process &
-	pgrep -f "./manage_my_process" > /var/run/my_process.pid
+	pgrep -f "/manage_my_process" > /var/run/my_process.pid
 	echo "manage_my_process restarted"
 	;;
     *)
 	echo "Usage: manage_my_process {start|stop|restart}"
 	;;
-esac
+esac 
